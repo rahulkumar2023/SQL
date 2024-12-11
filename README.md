@@ -1,5 +1,12 @@
+Here's the updated **README.md** including the HTML file and all other content you shared:
+
+---
+
 # SQL Masterclass Repository
+
 This repository contains a collection of SQL exercises, scripts, datasets, and interactive learning resources, including the **SQL Murder Mystery** and accompanying HTML interface.
+
+---
 
 ## **Repository Contents**
 
@@ -29,6 +36,8 @@ This repository contains a collection of SQL exercises, scripts, datasets, and i
 ### **4. Interactive HTML Interface**
 - **`The SQL Murder Mystery.html`**: An interactive web interface designed for the **SQL Murder Mystery** exercise. This file provides a detailed walkthrough for solving the mystery, including schema exploration, query examples, and interactive hints.
 
+---
+
 ## **SQL Murder Mystery**
 
 ### Overview
@@ -42,27 +51,33 @@ The SQL Murder Mystery is a game where you use SQL to solve a fictional murder t
 
 ### Key Commands:
 - Query crime scene reports:
+  ```sql
   SELECT * FROM crime_scene_report
   WHERE type = 'murder' AND date = '20180115' AND city = 'SQL City';
   ```
 - Investigate witnesses:
+  ```sql
   SELECT * FROM person
   WHERE address_street_name IN ('Northwestern Dr', 'Franklin Ave');
   ```
 - Analyze gym check-ins and memberships:
+  ```sql
   SELECT * FROM get_fit_now_member
   WHERE id = '48Z55';
   ```
 - Identify the mastermind:
+  ```sql
   SELECT * FROM person
   WHERE car_model = 'Model S' AND car_make = 'Tesla' AND height BETWEEN 65 AND 67;
   ```
 
 ### Using the HTML File:
-  - Open **`The SQL Murder Mystery.html`** in your browser to access an interactive environment for solving the mystery. The interface includes:
+- Open **`The SQL Murder Mystery.html`** in your browser to access an interactive environment for solving the mystery. The interface includes:
   - The murder story and database schema.
   - Hints and SQL query examples.
   - A walkthrough for beginners.
+
+---
 
 ## **How to Use**
 
@@ -77,10 +92,13 @@ The SQL Murder Mystery is a game where you use SQL to solve a fictional murder t
 ### **Run Other SQL Scripts**
 - Use the `.sql` files to practice creating schemas, performing complex queries, and exploring SQL concepts.
 
+---
+
 ## **Additional Content**
 
 ### User Table
 SQL commands for creating a `Users` table and adding sample data:
+```sql
 CREATE TABLE users (
   id SERIAL PRIMARY KEY,
   name CHARACTER VARYING
@@ -98,3 +116,18 @@ VALUES
   ('@sandip5004'),
   ('lakshmi@gmail.com');
 ```
+
+---
+
+## **How to Contribute**
+- Fork the repository and make contributions via pull requests.
+- Report any issues or suggest new features via the **Issues** tab.
+
+---
+
+## **License**
+This project is available under the MIT License.
+
+---
+
+Let me know if you'd like further adjustments or enhancements!
